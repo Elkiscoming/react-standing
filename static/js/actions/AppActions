@@ -1,0 +1,21 @@
+/**
+ * AppActions
+ */
+
+var AppDispatcher = require('../dispatcher/AppDispatcher');
+//var TodoConstants = require('../constants/TodoConstants');
+
+var AppActions = {
+
+  /**
+   * @param  {string} text
+   */
+  load: function() {
+    AppDispatcher.handleViewAction({
+      actionType: "load"
+    });
+  }
+
+};
+
+module.exports = AppActions;
